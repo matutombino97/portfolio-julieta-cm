@@ -11,7 +11,7 @@ const BackgroundVideo = () => {
         playsInline
         className="video-background-element"
       >
-        <source src="/Coraline Ambience_ Sounds from the Other World _ LAIKA Studios.mp4" type="video/mp4" />
+        <source src="/bg-coraline.mp4" type="video/mp4" />
       </video>
       <div className="video-overlay"></div>
     </div>
