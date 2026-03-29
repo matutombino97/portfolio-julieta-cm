@@ -1,0 +1,128 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.contact-text.glass-panel {
+  background: rgba(5, 2, 2, 0.4);
+  backdrop-filter: blur(20px);
+  padding: 4rem;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.contact-accent-text {
+  font-family: var(--font-accent);
+  color: var(--accent);
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  display: block;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 20px rgba(228, 211, 211, 0.3);
+}
+
+.contact-main-title {
+  font-family: var(--font-elegant);
+  font-size: 5rem; /* Muy fino, muy elegante */
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.contact-p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.info-item .icon {
+  color: var(--primary-light);
+}
+
+.info-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.info-item p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+  position: relative;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(74, 14, 14, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-light);
+}
+
+.contact-detail span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+}
+
+.contact-detail h4 {
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+}
+
+.chevron {
+  position: absolute;
+  right: 2rem;
+  opacity: 0;
+  transition: 0.3s;
+  color: var(--primary-light);
+}
+
+.contact-card:hover .chevron {
+  opacity: 1;
+  right: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,45 @@
+.footer {
+  padding: 4rem 0;
+  border-top: 1px solid var(--glass-border);
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.footer-logo span {
+  color: var(--primary-light);
+  margin-left: 5px;
+}
+
+.footer p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social a {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-social a:hover {
+  color: var(--primary-light);
+}

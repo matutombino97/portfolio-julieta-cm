@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300&family=Outfit:wght@300;400;600;900&display=swap');
+
+:root {
+  --primary: #2d0a0a;
+  --primary-light: #ffffff;
+  --bg-dark: #050202;
+  --bg-accent: #0f0505;
+  --text-light: #ffffff;
+  --text-dim: rgba(255, 255, 255, 0.7);
+  --accent: #E4D3D3; /* Beige hueso elegante */
+  --glass: rgba(5, 2, 2, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  /* Typography - Coraline Style */
+  --font-main: 'Outfit', sans-serif;
+  --font-elegant: 'Cormorant Garamond', serif;
+  --font-accent: 'Averia Serif Libre', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-shadow: 0 2px 15px rgba(0,0,0,0.8); /* Resalte fuerte para letras blancas */
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-elegant);
+  font-weight: 300; /* Fino y elegante */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Global typography - White text stands out via global shadow */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, var(--primary-light), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

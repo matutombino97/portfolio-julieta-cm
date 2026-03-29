@@ -1,0 +1,96 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h2 {
+  font-family: var(--font-accent);
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  text-shadow: 0 0 20px rgba(228, 211, 211, 0.2);
+}
+
+.hero-text h1 {
+  font-family: var(--font-elegant);
+  font-size: clamp(4rem, 12vw, 9rem); /* Más grande y dramático */
+  font-weight: 300; /* Fino y elegante */
+  line-height: 0.9;
+  margin-bottom: 2rem;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.hero-text p {
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 3.5rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--glass-border);
+  color: var(--text-light);
+  background: var(--glass);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+}
+
+.hero-bg-accent {
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  width: 50%;
+  height: 80%;
+  background: var(--primary);
+  filter: blur(150px);
+  opacity: 0.2;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-btns {
+    flex-direction: column;
+  }
+}

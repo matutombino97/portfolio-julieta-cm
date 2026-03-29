@@ -1,0 +1,82 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image {
+  height: 600px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.juli-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 5, 5, 0.6) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.about-info h3 {
+  font-family: var(--font-accent);
+  color: var(--accent);
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.about-info h2 {
+  font-family: var(--font-elegant);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.about-info p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.stat h4 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.stat span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about-image {
+    height: 400px;
+  }
+}
