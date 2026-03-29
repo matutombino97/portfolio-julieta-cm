@@ -23,11 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
-# Raw Assets (Root)
-*.mp4
-*.pdf
-!public/*.mp4
+# Raw Assets (Root) - NO SUBIR ESTOS
+/*.mp4
+/*.pdf
 
-# Background video is too large for GitHub (284MB)
-# Must be hosted externally - see BackgroundVideo.jsx
-public/bg-coraline.mp4
+# Permitir videos en public (importante para el fondo)
+!public/*.mp4
