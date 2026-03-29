@@ -27,3 +27,7 @@ dist-ssr
 *.mp4
 *.pdf
 !public/*.mp4
+
+# Background video is too large for GitHub (284MB)
+# Must be hosted externally - see BackgroundVideo.jsx
+public/bg-coraline.mp4
