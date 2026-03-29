@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-logo">
           JULIETA<span>CASTILLO</span>
         </div>
-        <p>© {new Date().getFullYear()} Julieta Castillo. Desarrollado por el pito grande de su macho.</p>
+        <p>© {new Date().getFullYear()} Julieta Castillo. Desarrollado con mucho amor para la mejor CM del mundo.</p>
         <div className="footer-social">
           <a href="https://www.instagram.com/julieta_castillo_/?hl=es" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>

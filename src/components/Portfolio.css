@@ -428,6 +428,18 @@
 }
 
 @media (max-width: 768px) {
+  .portfolio-vertical-section {
+    padding: 6rem 0;
+  }
+  
+  .portfolio-items-stack {
+    gap: 6rem;
+  }
+
+  .portfolio-header-center {
+    margin-bottom: 5rem;
+  }
+
   .gradient-text-large {
     font-size: 3rem;
   }
@@ -437,7 +449,12 @@
   }
 
   .media-container-full {
-    aspect-ratio: 1;
-    /* Cuadrado en móvil para aprovechar espacio */
+    height: clamp(300px, 60vw, 500px); /* Ajuste dinámico de altura p/ móviles */
+    aspect-ratio: auto;
+    padding: 1rem;
+  }
+
+  .phone-video-overlay {
+    border-radius: 1rem; /* Borde más pequeño p/ celular en el video */
   }
 }
